@@ -22,3 +22,5 @@
 ## Mac OS X metadata files:
 *.DS_Store
 
+# Nixpkgs has latinmodern-math as lmmath-regular 
+latinmodern-math.otf
