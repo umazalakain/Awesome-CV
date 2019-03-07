@@ -69,6 +69,10 @@
 % \twitter{@twit}
 % \skype{skype-id}
 % \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
 
 % \quote{}
@@ -94,15 +98,215 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 
-\input{cv/education.tex}
-\vspace{-3.0mm}
-\input{cv/skills.tex}
-\input{cv/experience.tex}
-\input{cv/extracurricular.tex}
-\input{cv/honors.tex}
-\input{cv/presentation.tex}
-\input{cv/other_interests.tex}
+\cvsection{Research Interests}
 
+\begin{cvitems}
+    \item Programming language theory, type theory.
+    \item Reflective verified problem solvers.
+\end{cvitems}
 
-%-------------------------------------------------------------------------------
+\cvsection{Academic Qualifications}
+
+\begin{cventries}
+    \cventry
+      {MSc Computer Science} % Degree
+      {University of Glasgow} % Institution
+      {Glasgow} % Location
+      {2018 - present} % Date(s)
+      {}
+
+    \cventry
+      {BSc Hons Computer Science} % Degree
+      {University of Strathclyde} % Institution
+      {Glasgow} % Location
+      {2014 - 2018} % Date(s)
+      {
+          First class honours. Awarded Andrew McGettrick prize for
+          \textbf{outstanding performance}.\newline
+          Thesis title: Evidence providing problem solvers in Agda.\newline
+          Supervisor: Conor McBride.\newline
+      }
+\end{cventries}
+
+\cvsection{Experience}
+
+\begin{cventries}
+
+    \cventry
+      {Associate} % Job title
+      {GISA Elkartea} % Organization
+      {Errenteria} % Location
+      {2010 - present} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of tasks/responsibilities
+          \item {Non-profit organization for the promotion of libre software and
+              the translation of software to Basque}
+          \item {Developed multiple libre web applications for a local radio
+              station}
+          \item {Translated multiple libre Android applications to Basque}
+        \end{cvitems}
+      }
+
+    \cventry
+      {Web developer \& text analyst} % Job title
+      {TextLab} % Organization
+      {Glasgow} % Location
+      {2016 - present} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of tasks/responsibilities
+          \item {Joint research project between the English and Computer Science
+              departments at Strathclyde, see \url{http://losp.us/}}
+          \item {Developed a small Haskell library that parses and analyses the
+              TEI-encoded texts provided by the Folger Shakespeare Library}
+          \item {Developed an evolving static website that publishes our class'
+              work}
+          \item {Collaborated in meetings with the staff from the Folger
+              Shakespeare Library at Washington, D.C.}
+        \end{cvitems}
+      }
+
+    \cventry
+      {Software Developer} % Job title
+      {A2H Software Factory} % Organization
+      {Donostia} % Location
+      {2014 - 2016} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of tasks/responsibilities
+          \item {Developed small web applications for internal company usage}
+          \item {Developed a content publishing system focused on third-party
+              integration}
+          \item {Developed a data extraction and visualization library}
+        \end{cvitems}
+      }
+
+    \cventry
+      {Lab demonstrator} % Job title
+      {University of Strathclyde} % Organization
+      {Glasgow} % Location
+      {2017} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of tasks/responsibilities
+          \item {Demonstrated User and Data Modelling labs}
+          \item {Demonstrated Programming Foundations}
+        \end{cvitems}
+      }
+
+\end{cventries}
+
+\cvsection{Skills}
+
+\begin{cvskills}
+    \cvskill
+      {Programming} % Category
+      {Haskell, Agda, Python, JS, Java, Rust, C, SQL, LaTeX} % Skills
+  
+    \cvskill
+      {System administration} % Category
+      {Git, NixOS \& GNU/Linux administration, Bourne shells} % Skills
+  
+    \cvskill
+      {Web} % Category
+      {Django, AngularJS, HTML5, LESS, SASS} % Skills
+  
+    \cvskill
+      {Languages} % Category
+      {English, Spanish, Basque, basic Dutch and French} % Skills
+\end{cvskills}
+
+\cvsection{Honors \& Awards}
+
+\begin{cvhonors}
+  
+    \cvhonor
+      {Andrew McGettrick prize for outstanding performance} % Award
+      {University of Strathclyde} % Event
+      {Glasgow} % Location
+      {2018} % Date(s)
+  
+    \cvhonor
+      {Best overall third year student} % Award
+      {Baillie Gifford} % Event
+      {Glasgow} % Location
+      {2017} % Date(s)
+  
+    \cvhonor
+      {Dean's Certificate for excellent results} % Award
+      {University of Strathclyde} % Event
+      {Glasgow} % Location
+      {2014--2017} % Date(s)
+  
+    \cvhonor
+      {Winner of the Bloomberg challenge} % Award
+      {StrathHack \newline Developed a game based on mathematical analysis of financial data} % Event
+      {Glasgow} % Location
+      {2014} % Date(s)
+\end{cvhonors}
+
+\cvsection{Extracurricular Activity}
+
+\begin{cventries}
+    \cventry
+      {Participant} % Affiliation/role
+      {Hackmeeting} % Organization/group
+      {Spain} % Location
+      {2009-2013} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of experience/contributions/knowledge
+          \item {Decision making, organization and physical work}
+          \item {Attended multiple talks and workshops}
+        \end{cvitems}
+      }
+  
+    \cventry
+      {Member} % Affiliation/role
+      {Lakaxita Hacklab} % Organization/group
+      {Irun} % Location
+      {2010-2013} % Date(s)
+      {
+        \begin{cvitems} % Description(s) of experience/contributions/knowledge
+          \item {Lecturer in a brief introduction to Python}
+          \item {Assistant in a short Django workshop}
+          \item {Participant in debates involving technology and ethics}
+        \end{cvitems}
+      }
+\end{cventries}
+
+\cvsection{Presentation}
+
+\begin{cventries}
+    \cventry
+      {Presenter of <GPG: Una introducción>} % Role
+      {Jornadas de Conocimiento Libre} % Event
+      {Madrid} % Location
+      {2016} % Date(s)
+      {
+        \begin{cvitems} % Description(s)
+          \item {A brief introduction to public key encryption using GPG,
+              management of keys, web of trust and keysigning}
+        \end{cvitems}
+      }
+  
+    \cventry
+      {Presenter of <El lado oscuro de Google>} % Role
+      {Ud4kamp} % Event
+      {Gernika} % Location
+      {2012} % Date(s)
+      {
+        \begin{cvitems} % Description(s)
+          \item {Aims to raise awareness of the power that we hand over to
+              organizations like Google}
+        \end{cvitems}
+      }
+  
+    \cventry
+      {Presenter of <Segurtasunera sarrera>} % Role
+      {Arrosa Sareko topaketak} % Event
+      {Bergara} % Location
+      {2011} % Date(s)
+      {
+        \begin{cvitems} % Description(s)
+          \item {Security tips for libre radios and grassroot movements}
+        \end{cvitems}
+      }
+\end{cventries}
 \end{document}
