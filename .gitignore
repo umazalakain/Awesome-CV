@@ -24,3 +24,7 @@
 
 # Nixpkgs has latinmodern-math as lmmath-regular 
 latinmodern-math.otf
+
+auto
+examples/auto
+*.fdb_latexmk
